@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://img.freepik.com/premium-photo/blue-denim-texture-background-jeans_653092-309.jpg);
+}
+
+.confirmation-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    width: 80px;
+    margin-right: 10px;
+}
+
+.order-summary, .voucher {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.order-summary h2, .voucher h2 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.product, .voucher p {
+    margin: 5px 0;
+}
+
+.product img {
+    width: 100px;
+}
+
+.message {
+    font-style: italic;
+    margin-top: 20px;
+}
+.butt button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.butt button:hover {
+    background-color: #0056b3;
+}

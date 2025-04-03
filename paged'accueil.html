@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil BLUE FINGERS</title>
+  <link rel="stylesheet" href="css/file1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700dispaly=swap" rel="stylesheet">
+  <style>
+   @media screen and (max-width: 768px) {
+      .col {
+        flex-basis: 100%;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 60px;
+      }
+      p {
+        font-size: 24px;
+      }
+      button {
+        width: 150px;
+      }
+      .card {
+        width: 150px;
+        height: 170px;
+      }
+      .promotion-text h3 {
+        font-size: 20px;
+      }
+      .promotion-text p {
+        font-size: 16px;
+      }
+      .featured-products h2 {
+        font-size: 28px;
+      }
+      .testimonial p {
+        font-size: 16px;
+      }
+      .testimonial img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="navbar">
+        
+        <img src="images/logo.jpg" class="logo">
+        <nav>
+           <ul>
+            <li> <a href="contactUs.html">CONTACT US</a></li>
+            <li> <a href="">HOME</a></li>
+            <li> <a href="login.php">LOGIN UP</a></li>
+            <li> <a href="sign.html">SIGN UP</a></li>
+            <li><a href="aboutUs.html">ABOUT US</a></li>
+           </ul> 
+        </nav>
+       <img src="images/menu.png"  class="menu-icon">
+    </div>
+    <div class="row">
+    <div class="col">
+        <h1>BLUE FINGERS</h1>
+        <p>Le style c'est l'Homme</p>
+      <a href="modal.html" ><button type="button">Shopping</button></a> 
+    </div>
+    <div class="col">
+
+        <div class="card card1">
+            <h5>Pontalon</h5>
+        </div>
+
+        <div class="card card2">
+            <h5>chemise</h5>
+        </div>
+
+        <div class="card card3">
+            <h5>jacket</h5>
+        </div>
+
+        <div class="card card4">
+            <h5>short</h5>
+        </div>
+
+    </div>
+    </div>
+  </div>
+  
+    <video id="myVideo" controls muted width="100%">
+    <source src="images/vedjeans.mp4" type="video/mp4" width="100%">
+<source src="images/vedjeans.webm" type="video/webm" width="100%"> 
+<source src="images/vedjeans.ogg" type="video/ogg" width="100%"> 
+ </video>
+<div class="promotion-banner">
+    <img src="images/promotion.webp" width="100%" height="200px"  alt="Bannière promotionnelle">
+    <div class="promotion-text">
+        <h3>Offre spéciale : -20% sur tous les produits</h3>
+        <p>Utilisez le code promo "SUMMER20" lors du paiement.</p>
+    </div>
+</div>
+
+<!-- Nouvelle section : Diaporama de produits en vedette -->
+<div class="featured-products">
+    <h2>Produits en vedette</h2>
+    <div class="slideshow">
+        <img src="images/v2.jpg" width="50%" alt="Produit 1">
+        <img src="images/v1.jpg" width="50%" alt="Produit 2">
+        <img src="images/v3.jpg" width="50%" alt="Produit 3">
+    </div>
+</div>
+
+<!-- Nouvelle section : Témoignages -->
+<div class="testimonials">
+    <h2>Témoignages</h2>
+    <div class="testimonial">
+        <img src="images/cl1.jpg" alt="Avatar Client 1">
+        <p>"J'adore les produits de Blue Fingers, ils sont de haute qualité et élégants."</p>
+        <p>Salma harit</p>
+    </div>
+    <div class="testimonial">
+        <img src="images/cl2.png" alt="Avatar Client 2">
+        <p>"Le service client de Blue Fingers est excellent, je recommande vivement."</p>
+        <p>Adam Salim </p>
+    </div>
+</div>
+    <script>
+        document.addEventListener("click", function() {
+            var myVideo = document.getElementById("myVideo");
+            myVideo.muted = false;
+            myVideo.play();
+            document.removeEventListener("click", arguments.callee);
+        });
+
+
+const h1Element = document.querySelector('h1');
+document.addEventListener('scroll', () => {
+    const h1Position = h1Element.getBoundingClientRect().top;
+    const halfWindowHeight = window.innerHeight / 2;
+    if (h1Position < halfWindowHeight) {
+        const opacity = 1 - (h1Position / halfWindowHeight);
+        h1Element.style.opacity = opacity;
+    }
+});
+
+    </script>
+
+</body>
+</html>

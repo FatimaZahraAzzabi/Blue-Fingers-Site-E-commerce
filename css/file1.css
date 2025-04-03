@@ -1,0 +1,232 @@
+*{ 
+    margin:0px;
+    padding: 0px;
+    font-family: 'Roboto' , 'sans-serif';
+    box-sizing: border-box;
+}
+.no-underline {
+    text-decoration: none;
+  }
+  
+ .container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(https://img.freepik.com/premium-photo/blue-denim-texture-background-jeans_653092-309.jpg);
+    background-position:center;
+    background-size: cover;
+    padding-left:8%;
+    padding-right:8%;
+    box-sizing: border-box;
+   
+ }
+
+ .navbar{ 
+    height: 12%;
+    display: flex;
+    align-items: center;
+     background-color: black;
+
+ }
+.menu-icon{
+   width: 30px;
+   cursor: pointer;
+ margin-left: 40px;
+}
+
+
+ .logo{
+    width:50px;
+    cursor:pointer;
+    margin-left: 40px;
+ }
+
+ nav{
+flex:1;
+text-align:right;
+margin: auto;
+ }
+
+ nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+ }
+
+ nav ul li a { 
+    text-decoration: none;
+    color:#fff;
+    font-size: 13px;
+ }
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+
+/* h1 {
+    color: #fff;
+    font-size: 100px;
+   
+} */
+
+
+h1 {
+    color: #fff;
+    font-size: 100px;
+    opacity: 1; /* Opacité initiale */
+    transition: opacity 1s; /* Transition pour l'effet de fondu */
+}
+
+.fade-in {
+    opacity: 1; 
+}
+
+ 
+button{
+    width: 180px;
+    color: #000;
+    font-size:20px ;
+    padding:12px 0;
+    background: #fff;
+    border:0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+p{
+    color:#fff;
+    font-size: 30px;
+    line-height: 15px;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding:15px 25px;
+    box-sizing:border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition:transform 0.5s;
+}
+
+.card1{
+    background-image: url(https://m2.jeans-industry.fr/231075-large_bis/jeans-taille-haute-destroy-a-fentes.jpg);
+}
+.card2{
+    background-image: url(https://cdn.sarenza.cloud/_img/productsv4/0000217745/0000217745_408548_09_504x690.jpg?201909091754&v=20230626141758);
+}
+.card3{
+    background-image: url(https://i.pinimg.com/originals/2c/da/db/2cdadbe94225dd0834a662a9d505eee5.jpg);
+}
+.card4{
+    background-image: url(https://stylee.fr/wp-content/uploads/Short-en-jean-comment-bien-choisir.jpg);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color: black  ;
+    text-shadow: 0 0 5px #999  ;
+}
+
+/* <)))))))))))))))))))))))))))))))))))))))))))))))))))) */
+/* Nouvelle section : Bannière promotionnelle */
+.promotion-banner {
+    background-color: #f2f2f2;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .promotion-banner img {
+    max-width: 100%;
+  }
+  
+  .promotion-text h3 {
+    font-size: 24px;
+    color: #ff0000;
+    margin-bottom: 10px;
+  }
+  
+  .promotion-text p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* Nouvelle section : Diaporama de produits en vedette */
+  .featured-products {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .featured-products h2 {
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 30px;
+  }
+  
+  .slideshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .slideshow img {
+    max-width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin: 0 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Nouvelle section : Témoignages */
+  .testimonials {
+    background-color: #f2f2f2;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 30px;
+  }
+  
+  .testimonial {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .testimonial p:last-child {
+    font-weight: bold;
+  }
+  
